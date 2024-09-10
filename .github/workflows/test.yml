@@ -7,15 +7,18 @@ on:
       - main
 jobs:
   test:
+    name: Test 
     runs-on: ubuntu-latest
     steps:
-        - name: Setup inso
-          uses: Kong/setup-inso@v1.1.6
-          with:
-            inso-version: 3.5.0
-        - run: inso --version
-        - name: Run test suites
-          run: inso run test expandtesting --env expandtesting  
+      - name: Checkout branch
+        uses: actions/checkout@v4
+      - name: Setup 
+        uses: kong/setup-inso@v1.1.6
+        with:
+          inso-version: 9.3.4-beta.1
+          compression: xz      
+      - name: Run test suites
+        run: inso run test "expandtesting"    
 
 
-     
+
