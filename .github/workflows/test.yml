@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  Linux:
+    name: Validate API spec
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+      - uses: kong/setup-inso@v1
+        with:
+          inso-version: 9.3.4-beta.1
+
+      - name: Lint
+        run: inso lint spec "expandtesting.yaml" --ci --src expandtesting.json
+
+      - name: Run test suites
+        run: inso run test "expandtesting.yaml" --ci --src expandtesting.json
+
+
+
+
