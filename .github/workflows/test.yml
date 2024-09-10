@@ -1,0 +1,19 @@
+
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Setup inso
+          uses: Kong/setup-inso@v1.1.6
+          with:
+            inso-version: 3.5.0
+        - run: inso --version
+
+
+     
