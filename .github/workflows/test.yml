@@ -15,7 +15,7 @@ jobs:
             inso-version: 3.5.0
         - run: inso --version
         - name: Run test suites
-          run: inso run test "expandtesting" --ci --env "expandtesting"
+          run: inso run test "expandtesting" --env "expandtesting" --ci  
 
 
      
