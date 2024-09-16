@@ -6,7 +6,7 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 
 | Requirement                     | Version        | Note                                                            |
 | :------------------------------ |:---------------| :-------------------------------------------------------------- |
-| Insomnia                        | 9.3.3          | -                                                               |
+| Insomnia                        | 10.0.0         | -                                                               |
              
 # Installation:
 
@@ -14,7 +14,7 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 
 # Tests:
 
-- Load expandtesting.json file on Insomnia and execute the requests.
+- Hit :point_right::arrow_forward:at to execute either individual requests or the entire collection.
 
 # Support:
 
