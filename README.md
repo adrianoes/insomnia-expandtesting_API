@@ -14,7 +14,7 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 
 # Tests:
 
-- Hit :point_right::arrow_forward:at to execute either individual requests or the entire collection.
+- Hit :point_right::arrow_forward: to execute either individual requests or the entire collection.
 
 # Support:
 
