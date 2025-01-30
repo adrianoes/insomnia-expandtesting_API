@@ -26,7 +26,10 @@ jobs:
           # Execute the Inso command with the JUnit reporter
           inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit
 
-      - name: List files in the report directory
+      - name: List current directory to verify report file
+        run: ls -l $GITHUB_WORKSPACE
+
+      - name: List files in report folder
         run: ls -l $GITHUB_WORKSPACE/insomnia-expandtesting_API/reports
 
       - name: Archive production artifacts
