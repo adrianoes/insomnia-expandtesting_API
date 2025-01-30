@@ -19,18 +19,10 @@ jobs:
           inso-version: 10.3.0  
 
       - name: Run tests and generate report
-        run: |
-          # Run the Inso command with verbose output to debug
-          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit > result.log
-
-      - name: List current directory to verify report file
-        run: ls -l $GITHUB_WORKSPACE
-
-      - name: Exibir conteúdo do log
-        run: cat $GITHUB_WORKSPACE/result.log
+        run: inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit > ./reports/report.xml
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: result-log
-          path: $GITHUB_WORKSPACE/result.log
+          name: result
+          path: ./reports/report.xml
