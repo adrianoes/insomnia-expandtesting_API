@@ -1,0 +1,21 @@
+name: Run Insomnia Tests
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Criar pasta de relatórios
+        run: mkdir -p insomnia-expandtesting_API/reports
+
+      - name: Executar testes e salvar relatório JSON
+        run: |
+          inso run collection wrk_89cad6 -e env_2823ee --bail 
