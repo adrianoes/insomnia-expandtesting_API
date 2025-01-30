@@ -21,6 +21,6 @@ jobs:
       - name: Criar pasta de relatórios
         run: mkdir -p insomnia-expandtesting_API/reports
 
-      - name: Executar testes do Insomnia
+      - name: Executar testes do Insomnia e gerar relatório
         run: |
-          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json
+          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit > insomnia-expandtesting_API/reports/test-results.xml
