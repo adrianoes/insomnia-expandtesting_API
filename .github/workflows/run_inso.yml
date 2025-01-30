@@ -10,21 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do código
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Instalar Inso CLI
+      - name: Install Inso CLI
         uses: kong/setup-inso@v1
         with:
           inso-version: 10.3.0  # Use a versão desejada
 
-      - name: Criar pasta de relatórios
+      - name: Create report folder
         run: mkdir -p insomnia-expandtesting_API/reports
 
-      - name: Executar testes do Insomnia e gerar relatório
+      - name: Run tests and generate report
         run: |
-          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter-junit ./reports/report.xml
-      - name: Step 4 Archive production artifacts
+          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit ./reports/report.xml
+
+      - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
           name: report
