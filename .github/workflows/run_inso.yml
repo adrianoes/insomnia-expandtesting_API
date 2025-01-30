@@ -18,13 +18,13 @@ jobs:
         with:
           inso-version: 10.3.0  
 
-      - name: Create report folder (absolute path)
+      - name: Create report folder
         run: mkdir -p $GITHUB_WORKSPACE/insomnia-expandtesting_API/reports
 
       - name: Run tests and generate report
         run: |
-          # Execute the Inso command and explicitly specify the report location
-          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit --output $GITHUB_WORKSPACE/insomnia-expandtesting_API/reports/report.xml
+          # Execute the Inso command with the JUnit reporter
+          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit
 
       - name: List files in the report directory
         run: ls -l $GITHUB_WORKSPACE/insomnia-expandtesting_API/reports
