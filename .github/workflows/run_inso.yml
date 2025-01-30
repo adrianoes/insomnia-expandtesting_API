@@ -13,9 +13,14 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
+      - name: Instalar Inso CLI
+        uses: kong/setup-inso@v1
+        with:
+          inso-version: 10.3.0  # Versão que você deseja usar
+
       - name: Criar pasta de relatórios
         run: mkdir -p insomnia-expandtesting_API/reports
 
       - name: Executar testes e salvar relatório JSON
         run: |
-          inso run collection wrk_89cad6 -e env_2823ee --bail 
+          inso run collection wrk_89cad6 -e env_2823ee --bail

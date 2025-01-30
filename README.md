@@ -22,6 +22,8 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 - [expandtesting API documentation page](https://practice.expandtesting.com/notes/api/api-docs/)
 - [expandtesting API demonstration page](https://www.youtube.com/watch?v=bQYvS6EEBZc)
 - [API Development and Testing 101: Introduction to Insomnia](https://www.youtube.com/watch?v=30vI6Oq865s&t=1145s)
+- [CLI Command Reference](https://docs.insomnia.rest/inso-cli/cli-command-reference)
+- [Continuous Integration](https://docs.insomnia.rest/inso-cli/continuous-integration)
 
 # Tips:
 
