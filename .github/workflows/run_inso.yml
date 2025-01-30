@@ -18,23 +18,19 @@ jobs:
         with:
           inso-version: 10.3.0  
 
-      - name: Create report folder
-        run: mkdir -p $GITHUB_WORKSPACE/reports
-
       - name: Run tests and generate report
         run: |
           # Run the Inso command with verbose output to debug
-          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit > result.log 2>&1
-          cat result.log  # Print the output to see if the report is being generated
+          inso run collection wrk_89cad6 -e env_2823ee --bail --workingDir expandtesting.json --reporter junit > result.log
 
       - name: List current directory to verify report file
         run: ls -l $GITHUB_WORKSPACE
 
       - name: List files in report folder
-        run: ls -l $GITHUB_WORKSPACE/reports
+        run: ls -l $GITHUB_WORKSPACE/
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
           name: report
-          path: $GITHUB_WORKSPACE/reports/report.xml
+          path: $GITHUB_WORKSPACE/result.log
