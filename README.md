@@ -15,8 +15,8 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 
 # Tests:
 
-- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All**, :point_right: **Run**, :point_right: **</>Run via CLI** and copy the generated command. It must be something like  ```inso run collection wrk_89cad6 -e env_2823ee --bail ```. In cmd, navigate do C:\insomnia-expandtesting_API and execute the generated command ```inso run collection wrk_89cad6 -e env_2823ee --bail --verbose``` to run the collection in headless mode.
-- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All** to execute the entire collection or select individual tests.
+- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All**, :point_right: **Run**, :point_right: **</>Run via CLI** and copy the generated command. It must be something like  ```inso run collection wrk_89cad6 -e env_2823ee --bail```. In cmd, navigate do C:\insomnia-expandtesting_API and execute the generated command ```inso run collection wrk_89cad6 -e env_2823ee --bail --verbose``` to run the collection in headless mode.
+- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All** to execute the entire collection or select individual http requests.
 
 # Support:
 
@@ -30,5 +30,6 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 # Tips:
 
 - UI and API tests to send password reset link to user's email and API tests to verify a password reset token and reset a user's password must be tested manually as they rely on e-mail verification.
+- Insomnia has a poor and outdated documentation. ChatGPT was used in order to figure how to get the Github actions workflow working.
 
 
