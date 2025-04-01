@@ -1,4 +1,4 @@
-# insomnia-expandtesting_API
+# insomnia-expandtesting_api
 
 API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-docs/). This project contains basic examples on how to use Insomnia to test API. All the necessary support documentation to develop this project is placed here.
 
@@ -11,11 +11,11 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
              
 # Installation:
 
-- See [Insomnia page](https://github.com/Kong/insomnia/releases/tag/core@10.3.0) and download Insomnia and Inso. Install Insomnia and choose an option to sign in. Place inso.exe file in C:\insomnia-expandtesting_API.
+- See [Insomnia page](https://github.com/Kong/insomnia/releases/tag/core@10.3.0) and download Insomnia and Inso. Install Insomnia and choose an option to sign in. Place inso.exe file in C:\insomnia-expandtesting_api.
 
 # Tests:
 
-- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All**, :point_right: **Run**, :point_right: **</>Run via CLI** and copy the generated command. It must be something like  ```inso run collection wrk_89cad6 -e env_2823ee --bail```. In cmd, navigate do C:\insomnia-expandtesting_API and execute the generated command ```inso run collection wrk_89cad6 -e env_2823ee --bail --verbose``` to run the collection in headless mode.
+- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All**, :point_right: **Run**, :point_right: **</>Run via CLI** and copy the generated command. It must be something like  ```inso run collection wrk_89cad6 -e env_2823ee --bail```. In cmd, navigate do C:\insomnia-expandtesting_api and execute the generated command ```inso run collection wrk_89cad6 -e env_2823ee --bail --verbose``` to run the collection in headless mode.
 - In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All** to execute the entire collection or select individual http requests.
 
 # Support:
