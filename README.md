@@ -6,16 +6,17 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 
 | Requirement                     | Version        | Note                                                            |
 | :------------------------------ |:---------------| :-------------------------------------------------------------- |
-| Insomnia                        | 10.3.0         | -                                                               |
-| Inso                            | 10.3.0         | -                                                               |
+| Insomnia                        | 12.2.0         | -                                                               |
+| Inso                            | 12.2.0         | -                                                               |
              
 # Installation:
 
-- See [Insomnia page](https://github.com/Kong/insomnia/releases/tag/core@10.3.0) and download Insomnia and Inso. Install Insomnia and choose an option to sign in. Place inso.exe file in C:\insomnia-expandtesting_api.
+- See [Insomnia page](https://github.com/Kong/insomnia/releases/tag/core%4012.2.0) and download Insomnia.Core-12.2.0.exe
+ and inso-windows-12.2.0.zip. Install Insomnia and choose an option to sign in. Place inso.exe file in C:\insomnia-expandtesting_api.
 
 # Tests:
 
-- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All**, :point_right: **Run**, :point_right: **</>Run via CLI** and copy the generated command. It must be something like  ```inso run collection wrk_89cad6 -e env_2823ee --bail```. In cmd, navigate do C:\insomnia-expandtesting_api and execute the generated command ```inso run collection wrk_89cad6 -e env_2823ee --bail --verbose``` to run the collection in headless mode.
+- In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All**, :point_right: **Run**, :point_right: **</>Run via CLI** and copy the generated command. It must be something like  ```inso run collection wrk_6fcde3 -e env_0c07c1 --bail```. In cmd, navigate do C:\insomnia-expandtesting_api and execute the generated command ```inso run collection wrk_6fcde3 -e env_0c07c1 --bail --verbose``` to run the collection in headless mode.
 - In Insomnia, Hit :point_right::arrow_forward: **Run**, :white_check_mark: **Select All** to execute the entire collection or select individual http requests.
 
 # Support:
